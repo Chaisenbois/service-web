@@ -9,14 +9,17 @@
   "private": false,
   "scripts": {
     "dev": "nodemon --inspect ./src/server.js",
-    "start": "node ./src/server.js"
+    "start": "node ./src/server.js",
+    "test": "jest  --detectOpenHandles --watch"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "jest": "^27.4.5",
     "lodash": "^4.17.20",
     "node-json-db": "^1.1.0",
+    "supertest": "^6.1.6",
     "uuid": "^8.3.1"
   },
   "devDependencies": {

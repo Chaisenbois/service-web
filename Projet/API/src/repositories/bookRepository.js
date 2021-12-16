@@ -52,13 +52,12 @@ class BookRepository {
         if (path != null) {
             this.db.delete(path);
         }
-        
     }
 
     getIdPath(id) {
         const books = this.getAll();
         const index = _.findIndex(books, { id });
-        if (index == -1) {
+        if (index === -1) {
             return null;
         }
 

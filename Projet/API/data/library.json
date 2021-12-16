@@ -31,6 +31,12 @@
             "publicationDate": "1995",
             "id": "90091c00-ddd8-11e7-a75e-7f7cd01ab94e",
             "copies": []
+        },
+        {
+            "name": "Harry Potter et la chambre des secrets",
+            "author": "J.K Rowling",
+            "id": "d8e2e8c7-2713-4a85-8199-626cbf56dc3d",
+            "copies": []
         }
     ],
     "users": [

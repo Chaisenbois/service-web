@@ -1,6 +1,7 @@
 class BookController {
-    constructor(bookRepository) {
+    constructor(bookRepository, loanRepository) {
         this.bookRepository = bookRepository;
+        this.loanRepository = loanRepository
     }
 
     getAll(req, res) {
@@ -31,6 +32,11 @@ class BookController {
     delete(req, res) {
         this.bookRepository.delete(req.params.bookId);
         res.status(204).send(null);
+    }
+
+    getLoans(req, res ) {
+        const loans = this.loanRepository.getBookLoans(req.params.bookId)
+        res.status(200).send(loans)
     }
 }
 
